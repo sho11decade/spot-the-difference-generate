@@ -36,7 +36,7 @@ h1 {
     background: #27acd9;
 }
 
-p {
+.p1 {
     position: relative;
     color: #333;
     text-shadow: 0 0 2px white;
@@ -45,7 +45,7 @@ p {
     border-radius: 0 10px 10px;
 }
 
-p:before {
+.p1:before {
     content: "";
     position: absolute;
     background: #9de5ff;
@@ -70,3 +70,26 @@ p:before {
     border-radius: 100vh;
     transition: 0.5s;
 }
+input[type='file'] {
+    color: rgb(31, 41, 55);
+    cursor: pointer;
+    border: 1px solid rgb(191, 194, 199);
+    border-radius: 0.375rem;
+    padding-right: 0.5rem;
+    width: 24rem;
+  }
+  
+  ::file-selector-button,
+  ::-webkit-file-upload-button {
+    background-color: rgb(209, 213, 219);
+    color: rgb(31, 41, 55);
+    border: none;
+    cursor: pointer;
+    border-right: 1px solid rgb(191, 194, 199);
+    padding: 0.25rem 1rem;
+    margin-right: 1rem;
+  }
+  #preview {
+    width: 300pt;
+    height: auto;
+  }

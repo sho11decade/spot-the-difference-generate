@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <title>間違い探し生成</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
-  </head>
-  <body>
-    <h1>間違い探し生成</h1>
-    <p>間違い探しを自動生成します。ファイルをアップロードして、難易度を設定するだけです。</p>
-    <div>
-        <form action="" method="post">
-            <fieldset class="ff">
-                <legend>画像選択＆難易度設定</legend>
-            </fieldset>
-            <input type="submit" value="生成！" class="s">
-        </form>
-    </div>
-  </body>
+
+<head>
+  <title>間違い探し生成</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+  <script src="js/preview.js"></script>
+</head>
+
+<body>
+  <h1>間違い探し生成</h1>
+  <p class="p1">間違い探しを自動生成します。ファイルをアップロードして、難易度を設定するだけです。</p>
+  <div>
+    <form action="" method="post">
+
+
+      <input type="file" name="test" accept="image/*" onchange="previewFile(this);" required>
+      <p>プレビュー</p>
+      <img id="preview">
+      <br>
+      <input type="submit" value="生成！" class="s">
+    </form>
+  </div>
+</body>
+
 </html>
