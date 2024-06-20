@@ -36,7 +36,7 @@ h1 {
     background: #27acd9;
 }
 
-h2 {
+p {
     position: relative;
     color: #333;
     text-shadow: 0 0 2px white;
@@ -45,7 +45,7 @@ h2 {
     border-radius: 0 10px 10px;
 }
 
-h2:before {
+p:before {
     content: "";
     position: absolute;
     background: #9de5ff;
@@ -57,4 +57,16 @@ h2:before {
     -webkit-transform: translateY(-50%);
     transform: translateY(-50%);
     z-index: -1;
+}
+.ff {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    margin: auto;
+    padding: 1rem 4rem;
+    font-weight: bold;
+    border: 2px solid #27acd9;
+    color: #27acd9;
+    border-radius: 100vh;
+    transition: 0.5s;
 }
