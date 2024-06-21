@@ -4,4 +4,5 @@ function previewFile(hoge){
       document.getElementById('preview').src = fileData.result;
     });
     fileData.readAsDataURL(hoge.files[0]);
+    console.log('preview is done!')
   }
