@@ -20,4 +20,4 @@ def process():
 
 
 if __name__ == "__main__":
-    run(host='localhost', port=80, debug=True, reloader=True)
+    run(host='192.168.11.22', port=80, debug=True, reloader=True)
