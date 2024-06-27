@@ -1,0 +1,1 @@
+例:<https://sho11decade.github.io/spot-the-difference-generate/static/>
