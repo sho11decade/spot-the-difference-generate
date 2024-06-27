@@ -4,19 +4,19 @@
 <head>
   <title>間違い探し生成</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/script.js"></script>
-  <script src="js/preview.js"></script>
+  <link rel="stylesheet" href="https://sho11decade.github.io/spot-the-difference-generate/static/css/style.css">
+  <script src="https://sho11decade.github.io/spot-the-difference-generate/static/js/script.js"></script>
+  <script src="https://sho11decade.github.io/spot-the-difference-generate/static/js/preview.js"></script>
 </head>
 
 <body>
   <h1>間違い探し生成</h1>
   <p class="p1">間違い探しを自動生成します。ファイルをアップロードして、難易度を設定するだけです。</p>
   <div>
-    <form action="" method="post">
+    <form action="/process" method="post" enctype="multipart/form-data">
 
 
-      <input type="file" name="test" accept="image/*" onchange="previewFile(this);" required>
+      <input type="file" name="up" accept="image/*" onchange="previewFile(this);" required>
       <p>プレビュー</p>
       <img id="preview">
       <br>
