@@ -1,4 +1,6 @@
 from bottle import route, run, template, request, static_file, url, get, post, response, error, abort, redirect, os
+from io     import BytesIO
+from PIL    import Image
 static_path = 'D:\projects\spot-the-difference-generate\static\\'
 @route('/machigai/<filename>')
 def home(filename):
@@ -9,13 +11,11 @@ def process():
     data = request.files.getall('up')
     for upload in data:
         name, ext = os.path.splitext(upload.filename)
-        if ext not in ('.png', '.jpg', '.jpeg'):
+        if ext not in ('.png', '.jpg', '.jpeg', '.gif', '.bmp', '.tiff', '.webp'):
             return 'File extension not allowed.'
 
-    for upload in data:
-        print(upload.filename)
-        save_path = upload.filename
-        upload.save(save_path)
+
+
     return 'OK'
 
 
